@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50">
-    <!-- Navigation -->
+<!-- Navigation -->
     <nav class="bg-blue-900 text-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
@@ -27,18 +27,40 @@
                     <a href="about.html" class="hover:text-blue-200 transition duration-300 font-medium">เกี่ยวกับเรา</a>
                     <a href="contact.html" class="hover:text-blue-200 transition duration-300 font-medium">ติดต่อเรา</a>
                 </div>
-                <div class="md:hidden flex items-center">
-                    <button class="mobile-menu-btn text-white hover:text-blue-200">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
+                <div class="flex items-center space-x-4">
+                    <!-- User Dropdown -->
+                    <div class="relative">
+                        <button class="user-dropdown-btn flex items-center space-x-2 bg-blue-800 hover:bg-blue-700 px-4 py-2 rounded-lg transition duration-300">
+                            <i class="fas fa-user-circle text-xl"></i>
+                            <span class="font-medium">Admin</span>
+                            <i class="fas fa-chevron-down text-sm"></i>
+                        </button>
+                        <div class="user-dropdown hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border z-50">
+                            <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition duration-200">
+                                <i class="fas fa-edit mr-2"></i>แก้ไขข้อมูล
+                            </a>
+                            <a href="admin-dashboard.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition duration-200">
+                                <i class="fas fa-tachometer-alt mr-2"></i>ระบบหลังบ้าน
+                            </a>
+                            <div class="border-t border-gray-200"></div>
+                            <a href="#" class="block px-4 py-3 text-red-600 hover:bg-red-50 transition duration-200">
+                                <i class="fas fa-sign-out-alt mr-2"></i>ออกจากระบบ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:hidden">
+                        <button class="mobile-menu-btn text-white hover:text-blue-200">
+                            <i class="fas fa-bars text-xl"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Mobile menu -->
         <div class="mobile-menu hidden md:hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-blue-800">
-                <a href="index.html" class="block px-3 py-2 bg-blue-700 rounded-md">หน้าหลัก</a>
-                <a href="product.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">สินค้า</a>
+                <a href="index.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">หน้าหลัก</a>
+                <a href="product.html" class="block px-3 py-2 bg-blue-700 rounded-md">สินค้า</a>
                 <a href="services.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">บริการ</a>
                 <a href="promotion.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">โปรโมชัน</a>
                 <a href="article.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">บทความ</a>
@@ -222,6 +244,18 @@
     </footer>
 
     <script>
+
+        // User dropdown toggle
+        document.querySelector('.user-dropdown-btn').addEventListener('click', function() {
+            document.querySelector('.user-dropdown').classList.toggle('hidden');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.relative')) {
+                document.querySelector('.user-dropdown').classList.add('hidden');
+            }
+        });
         // Mobile menu toggle
         document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
             document.querySelector('.mobile-menu').classList.toggle('hidden');
