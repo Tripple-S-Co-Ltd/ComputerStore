@@ -1,1 +1,677 @@
-<h1>computer</h1>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สินค้า - ComputerStore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .smooth-bounce {
+            animation: smoothBounce 0.6s ease-in-out;
+        }
+        @keyframes smoothBounce {
+            0%, 20%, 53%, 80%, 100% {
+                transform: translate3d(0,0,0);
+            }
+            40%, 43% {
+                transform: translate3d(0, -8px, 0);
+            }
+            70% {
+                transform: translate3d(0, -4px, 0);
+            }
+            90% {
+                transform: translate3d(0, -2px, 0);
+            }
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.5s ease-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .scale-in {
+            animation: scaleIn 0.3s ease-out;
+        }
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-900 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-laptop text-2xl"></i>
+                        <span class="font-bold text-xl">ComputerStore</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-blue-200 transition duration-300 font-medium">หน้าหลัก</a>
+                    <a href="product.html" class="text-yellow-400 border-b-2 border-yellow-400 font-medium">สินค้า</a>
+                    <a href="services.html" class="hover:text-blue-200 transition duration-300 font-medium">บริการ</a>
+                    <a href="promotion.html" class="hover:text-blue-200 transition duration-300 font-medium">โปรโมชัน</a>
+                    <a href="article.html" class="hover:text-blue-200 transition duration-300 font-medium">บทความ</a>
+                    <a href="about.html" class="hover:text-blue-200 transition duration-300 font-medium">เกี่ยวกับเรา</a>
+                    <a href="contact.html" class="hover:text-blue-200 transition duration-300 font-medium">ติดต่อเรา</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <!-- User Dropdown -->
+                    <div class="relative">
+                        <button class="user-dropdown-btn flex items-center space-x-2 bg-blue-800 hover:bg-blue-700 px-4 py-2 rounded-lg transition duration-300">
+                            <i class="fas fa-user-circle text-xl"></i>
+                            <span class="font-medium">Admin</span>
+                            <i class="fas fa-chevron-down text-sm"></i>
+                        </button>
+                        <div class="user-dropdown hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border z-50">
+                            <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition duration-200">
+                                <i class="fas fa-edit mr-2"></i>แก้ไขข้อมูล
+                            </a>
+                            <a href="admin-dashboard.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition duration-200">
+                                <i class="fas fa-tachometer-alt mr-2"></i>ระบบหลังบ้าน
+                            </a>
+                            <div class="border-t border-gray-200"></div>
+                            <a href="#" class="block px-4 py-3 text-red-600 hover:bg-red-50 transition duration-200">
+                                <i class="fas fa-sign-out-alt mr-2"></i>ออกจากระบบ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:hidden">
+                        <button class="mobile-menu-btn text-white hover:text-blue-200">
+                            <i class="fas fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-blue-800">
+                <a href="index.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">หน้าหลัก</a>
+                <a href="product.html" class="block px-3 py-2 bg-blue-700 rounded-md">สินค้า</a>
+                <a href="services.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">บริการ</a>
+                <a href="promotion.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">โปรโมชัน</a>
+                <a href="article.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">บทความ</a>
+                <a href="about.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">เกี่ยวกับเรา</a>
+                <a href="contact.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">ติดต่อเรา</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">สินค้าทั้งหมด</h1>
+            <p class="text-xl text-blue-100">เลือกซื้อสินค้าคุณภาพดีจากร้านของเรา</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-8 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap gap-4 items-center justify-between">
+                <div class="flex flex-wrap gap-4">
+                    <select class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option>ทุกหมวดหมู่</option>
+                        <option>โน๊ตบุ๊ค</option>
+                        <option>คอมพิวเตอร์ตั้งโต๊ะ</option>
+                        <option>อุปกรณ์เสริม</option>
+                        <option>ซอฟต์แวร์</option>
+                    </select>
+                    <select class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option>เรียงตาม</option>
+                        <option>ราคาต่ำสุด</option>
+                        <option>ราคาสูงสุด</option>
+                        <option>ใหม่ล่าสุด</option>
+                        <option>ยอดนิยม</option>
+                    </select>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-gray-600">แสดง:</span>
+                    <button class="p-2 text-blue-600 border border-blue-600 rounded hover:bg-blue-50">
+                        <i class="fas fa-th-large"></i>
+                    </button>
+                    <button class="p-2 text-gray-400 hover:text-blue-600">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                            <i class="fas fa-laptop text-6xl text-gray-500"></i>
+                        </div>
+                        <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-md text-sm font-semibold">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">ASUS ROG Strix G15</h3>
+                        <p class="text-gray-600 text-sm mb-3">โน๊ตบุ๊คเกมมิ่ง AMD Ryzen 7, RTX 3070</p>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(128 รีวิว)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-400 line-through text-sm">฿45,990</span>
+                                <span class="text-xl font-bold text-red-600 block">฿35,990</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm add-to-cart-btn smooth-bounce" 
+                                    data-name="ASUS ROG Strix G15" 
+                                    data-price="35990" 
+                                    data-icon="fas fa-laptop"
+                                    data-description="โน๊ตบุ๊คเกมมิ่ง AMD Ryzen 7, RTX 3070">
+                                <i class="fas fa-cart-plus mr-1"></i>เพิ่มลงตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                        <i class="fas fa-desktop text-6xl text-gray-500"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Dell OptiPlex 7000</h3>
+                        <p class="text-gray-600 text-sm mb-3">PC ตั้งโต๊ะ Intel i7, 16GB RAM</p>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(89 รีวิว)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-600">฿28,500</span>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm add-to-cart-btn"
+                                    data-name="Dell OptiPlex 7000" 
+                                    data-price="28500" 
+                                    data-icon="fas fa-desktop"
+                                    data-description="PC ตั้งโต๊ะ Intel i7, 16GB RAM">
+                                <i class="fas fa-cart-plus mr-1"></i>เพิ่มลงตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                            <i class="fas fa-keyboard text-6xl text-gray-500"></i>
+                        </div>
+                        <div class="absolute top-2 right-2 bg-green-500 text-white px-2 py-1 rounded-md text-sm font-semibold">
+                            ใหม่!
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Razer BlackWidow V3</h3>
+                        <p class="text-gray-600 text-sm mb-3">คีย์บอร์ดเกมมิ่ง Mechanical</p>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(245 รีวิว)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-600">฿4,590</span>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm">
+                                <i class="fas fa-cart-plus mr-1"></i>เพิ่มลงตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                        <i class="fas fa-mouse text-6xl text-gray-500"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Logitech G Pro X</h3>
+                        <p class="text-gray-600 text-sm mb-3">เมาส์เกมมิ่งไร้สาย</p>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(156 รีวิว)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-600">฿3,290</span>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm">
+                                <i class="fas fa-cart-plus mr-1"></i>เพิ่มลงตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                        <i class="fas fa-tv text-6xl text-gray-500"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">LG UltraWide 34"</h3>
+                        <p class="text-gray-600 text-sm mb-3">จอมอนิเตอร์ 4K IPS</p>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(78 รีวิว)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-600">฿18,900</span>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm">
+                                <i class="fas fa-cart-plus mr-1"></i>เพิ่มลงตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                        <i class="fas fa-headphones text-6xl text-gray-500"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">SteelSeries Arctis 7</h3>
+                        <p class="text-gray-600 text-sm mb-3">หูฟังเกมมิ่งไร้สาย</p>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(203 รีวิว)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-600">฿6,590</span>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm">
+                                <i class="fas fa-cart-plus mr-1"></i>เพิ่มลงตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                        <i class="fas fa-laptop text-6xl text-gray-500"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">MacBook Air M2</h3>
+                        <p class="text-gray-600 text-sm mb-3">โน๊ตบุ๊ค Apple 13" 256GB</p>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(92 รีวิว)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-600">฿42,900</span>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm">
+                                <i class="fas fa-cart-plus mr-1"></i>เพิ่มลงตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                        <i class="fas fa-microchip text-6xl text-gray-500"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">AMD Ryzen 9 5900X</h3>
+                        <p class="text-gray-600 text-sm mb-3">โปรเซสเซอร์ 12-Core</p>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(167 รีวิว)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-600">฿16,900</span>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm">
+                                <i class="fas fa-cart-plus mr-1"></i>เพิ่มลงตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center mt-12">
+                <nav class="flex space-x-2">
+                    <button class="px-3 py-2 text-gray-500 hover:text-blue-600 border border-gray-300 rounded-l-md hover:bg-gray-50">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded-md">1</button>
+                    <button class="px-4 py-2 text-gray-700 hover:text-blue-600 border border-gray-300 hover:bg-gray-50">2</button>
+                    <button class="px-4 py-2 text-gray-700 hover:text-blue-600 border border-gray-300 hover:bg-gray-50">3</button>
+                    <button class="px-3 py-2 text-gray-500 hover:text-blue-600 border border-gray-300 rounded-r-md hover:bg-gray-50">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full mx-4 scale-in">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-bold text-gray-900" id="modalProductName">สินค้า</h3>
+                    <button class="close-modal text-gray-400 hover:text-gray-600">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <div class="text-center mb-6">
+                    <div class="h-32 bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg flex items-center justify-center mb-4">
+                        <i id="modalProductIcon" class="fas fa-laptop text-4xl text-gray-500"></i>
+                    </div>
+                    <p class="text-gray-600" id="modalProductDescription">รายละเอียดสินค้า</p>
+                    <div class="text-2xl font-bold text-blue-600 mt-2">
+                        ฿<span id="modalProductPrice">0</span>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center space-x-4 mb-6">
+                    <button class="quantity-btn bg-gray-200 hover:bg-gray-300 text-gray-700 w-10 h-10 rounded-full transition duration-200" data-action="decrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <span class="text-xl font-semibold w-12 text-center" id="quantity">1</span>
+                    <button class="quantity-btn bg-gray-200 hover:bg-gray-300 text-gray-700 w-10 h-10 rounded-full transition duration-200" data-action="increase">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+                <div class="space-y-3">
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition duration-300" id="confirmAddToCart">
+                        <i class="fas fa-cart-plus mr-2"></i>เพิ่มลงตะกร้า
+                    </button>
+                    <button class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition duration-300" id="buyNow">
+                        <i class="fas fa-credit-card mr-2"></i>ซื้อเลย
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-laptop text-2xl text-blue-400"></i>
+                        <span class="font-bold text-xl">ComputerStore</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">ร้านจำหน่ายคอมพิวเตอร์และอุปกรณ์ไอทีที่คุณไว้วางใจมาตลอด 10 ปี</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-line text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">เมนู</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">หน้าหลัก</a></li>
+                        <li><a href="product.html" class="text-gray-400 hover:text-white transition duration-300">สินค้า</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">บริการ</a></li>
+                        <li><a href="promotion.html" class="text-gray-400 hover:text-white transition duration-300">โปรโมชัน</a></li>
+                        <li><a href="article.html" class="text-gray-400 hover:text-white transition duration-300">บทความ</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">เกี่ยวกับเรา</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">หมวดสินค้า</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">โน๊ตบุ๊ค</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">คอมพิวเตอร์ตั้งโต๊ะ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">อุปกรณ์เสริม</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">ซอฟต์แวร์</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">ติดต่อเรา</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>123 ถนนเทคโนโลยี กรุงเทพฯ 10400</p>
+                        <p><i class="fas fa-phone mr-2"></i>02-123-4567</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@computerstore.com</p>
+                        <p><i class="fas fa-clock mr-2"></i>จันทร์-เสาร์ 9:00-18:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ComputerStore. สงวนลิขสิทธิ์ทุกการใช้งาน</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+
+        // User dropdown toggle
+        document.querySelector('.user-dropdown-btn').addEventListener('click', function() {
+            document.querySelector('.user-dropdown').classList.toggle('hidden');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.relative')) {
+                document.querySelector('.user-dropdown').classList.add('hidden');
+            }
+        });
+
+        // Product modal functionality
+        const modal = document.getElementById('productModal');
+        const modalProductName = document.getElementById('modalProductName');
+        const modalProductIcon = document.getElementById('modalProductIcon');
+        const modalProductDescription = document.getElementById('modalProductDescription');
+        const modalProductPrice = document.getElementById('modalProductPrice');
+        const quantityElement = document.getElementById('quantity');
+        
+        let currentProduct = {};
+        let quantity = 1;
+
+        // Add to cart button functionality
+        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                currentProduct = {
+                    name: this.dataset.name,
+                    price: parseInt(this.dataset.price),
+                    icon: this.dataset.icon,
+                    description: this.dataset.description
+                };
+                
+                modalProductName.textContent = currentProduct.name;
+                modalProductIcon.className = currentProduct.icon + ' text-4xl text-gray-500';
+                modalProductDescription.textContent = currentProduct.description;
+                modalProductPrice.textContent = currentProduct.price.toLocaleString();
+                quantity = 1;
+                quantityElement.textContent = quantity;
+                
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close modal
+        document.querySelectorAll('.close-modal').forEach(btn => {
+            btn.addEventListener('click', function() {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Close modal when clicking outside
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Quantity controls
+        document.querySelectorAll('.quantity-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const action = this.dataset.action;
+                if (action === 'increase') {
+                    quantity++;
+                } else if (action === 'decrease' && quantity > 1) {
+                    quantity--;
+                }
+                quantityElement.textContent = quantity;
+                
+                // Update total price display if needed
+                const totalPrice = currentProduct.price * quantity;
+                // You can add total price display here if needed
+            });
+        });
+
+        // Confirm add to cart
+        document.getElementById('confirmAddToCart').addEventListener('click', function() {
+            // Add animation
+            this.innerHTML = '<i class="fas fa-check mr-2"></i>เพิ่มแล้ว!';
+            this.classList.add('bg-green-600');
+            this.classList.remove('bg-blue-600');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+                
+                // Show success notification
+                showNotification('เพิ่มสินค้าลงตะกร้าเรียบร้อยแล้ว!', 'success');
+                
+                // Reset button
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-cart-plus mr-2"></i>เพิ่มลงตะกร้า';
+                    this.classList.remove('bg-green-600');
+                    this.classList.add('bg-blue-600');
+                }, 1000);
+            }, 1000);
+        });
+
+        // Buy now button
+        document.getElementById('buyNow').addEventListener('click', function() {
+            // Store order data in localStorage
+            const orderData = {
+                product: currentProduct,
+                quantity: quantity,
+                total: currentProduct.price * quantity
+            };
+            localStorage.setItem('currentOrder', JSON.stringify(orderData));
+            
+            // Redirect to checkout page
+            window.location.href = 'checkout.html';
+        });
+
+        // Notification function
+        function showNotification(message, type = 'success') {
+            const notification = document.createElement('div');
+            notification.className = `fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg transition-all duration-300 transform translate-x-full`;
+            
+            if (type === 'success') {
+                notification.classList.add('bg-green-500', 'text-white');
+                notification.innerHTML = `<i class="fas fa-check-circle mr-2"></i>${message}`;
+            }
+            
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.classList.remove('translate-x-full');
+            }, 100);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                notification.classList.add('translate-x-full');
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+
+        // Add smooth animations to product cards
+        document.querySelectorAll('.bg-white.rounded-lg.shadow-md').forEach(card => {
+            card.classList.add('fade-in-up');
+            
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-4px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>

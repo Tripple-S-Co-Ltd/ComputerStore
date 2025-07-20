@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา - ComputerStore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-900 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-laptop text-2xl"></i>
+                        <span class="font-bold text-xl">ComputerStore</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-blue-200 transition duration-300 font-medium">หน้าหลัก</a>
+                    <a href="product.html" class="hover:text-blue-200 transition duration-300 font-medium">สินค้า</a>
+                    <a href="services.html" class="hover:text-blue-200 transition duration-300 font-medium">บริการ</a>
+                    <a href="promotion.html" class="hover:text-blue-200 transition duration-300 font-medium">โปรโมชัน</a>
+                    <a href="article.html" class="hover:text-blue-200 transition duration-300 font-medium">บทความ</a>
+                    <a href="about.html" class="hover:text-blue-200 transition duration-300 font-medium">เกี่ยวกับเรา</a>
+                    <a href="contact.html" class="text-yellow-400 border-b-2 border-yellow-400 font-medium">ติดต่อเรา</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-btn text-white hover:text-blue-200">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-blue-800">
+                <a href="index.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">หน้าหลัก</a>
+                <a href="product.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">สินค้า</a>
+                <a href="services.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">บริการ</a>
+                <a href="promotion.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">โปรโมชัน</a>
+                <a href="article.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">บทความ</a>
+                <a href="about.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">เกี่ยวกับเรา</a>
+                <a href="contact.html" class="block px-3 py-2 bg-blue-700 rounded-md">ติดต่อเรา</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">ติดต่อเรา</h1>
+            <p class="text-xl text-blue-100">เรายินดีให้บริการและตอบคำถามของคุณตลอด 24 ชั่วโมง</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">ส่งข้อความถึงเรา</h2>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">ชื่อ</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="กรอกชื่อของคุณ">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">นามสกุล</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="กรอกนามสกุลของคุณ">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">อีเมล</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="example@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">เบอร์โทรศัพท์</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="08X-XXX-XXXX">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">หัวข้อเรื่อง</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option>เลือกหัวข้อเรื่อง</option>
+                                <option>สอบถามข้อมูลสินค้า</option>
+                                <option>ปัญหาการใช้งาน</option>
+                                <option>การรับประกัน</option>
+                                <option>ข้อเสนอแนะ</option>
+                                <option>อื่นๆ</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">ข้อความ</label>
+                            <textarea rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="กรอกข้อความของคุณ..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition duration-300">
+                            <i class="fas fa-paper-plane mr-2"></i>ส่งข้อความ
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-6">ข้อมูลการติดต่อ</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 mb-1">ที่อยู่สำนักงาน</h3>
+                                    <p class="text-gray-600">123 ถนนเทคโนโลยี แขวงดิจิทัล<br>เขตอินโนเวชัน กรุงเทพฯ 10400</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-phone text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 mb-1">โทรศัพท์</h3>
+                                    <p class="text-gray-600">02-123-4567<br>081-234-5678 (มือถือ)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-yellow-100 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-envelope text-yellow-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 mb-1">อีเมล</h3>
+                                    <p class="text-gray-600">info@computerstore.com<br>support@computerstore.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-clock text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 mb-1">เวลาทำการ</h3>
+                                    <p class="text-gray-600">จันทร์-เสาร์: 9:00-18:00<br>อาทิตย์: 10:00-17:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-6">ติดตามเราใน Social Media</h2>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="#" class="flex items-center p-4 border border-gray-200 rounded-lg hover:bg-blue-50 hover:border-blue-300 transition duration-300">
+                                <i class="fab fa-facebook text-2xl text-blue-600 mr-3"></i>
+                                <div>
+                                    <div class="font-semibold">Facebook</div>
+                                    <div class="text-sm text-gray-600">@ComputerStoreTH</div>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-center p-4 border border-gray-200 rounded-lg hover:bg-green-50 hover:border-green-300 transition duration-300">
+                                <i class="fab fa-line text-2xl text-green-600 mr-3"></i>
+                                <div>
+                                    <div class="font-semibold">LINE</div>
+                                    <div class="text-sm text-gray-600">@ComputerStore</div>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-center p-4 border border-gray-200 rounded-lg hover:bg-pink-50 hover:border-pink-300 transition duration-300">
+                                <i class="fab fa-instagram text-2xl text-pink-600 mr-3"></i>
+                                <div>
+                                    <div class="font-semibold">Instagram</div>
+                                    <div class="text-sm text-gray-600">@ComputerStoreTH</div>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-center p-4 border border-gray-200 rounded-lg hover:bg-red-50 hover:border-red-300 transition duration-300">
+                                <i class="fab fa-youtube text-2xl text-red-600 mr-3"></i>
+                                <div>
+                                    <div class="font-semibold">YouTube</div>
+                                    <div class="text-sm text-gray-600">ComputerStore Channel</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">แผนที่ร้าน</h2>
+                <p class="text-xl text-gray-600">มาเยี่ยมชมร้านของเราได้ตลอดเวลา</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <!-- Mock Map -->
+                <div class="h-96 bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
+                    <div class="text-center">
+                        <i class="fas fa-map-marked-alt text-6xl text-gray-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-700 mb-2">แผนที่ตำแหน่งร้าน</h3>
+                        <p class="text-gray-600">123 ถนนเทคโนโลยี แขวงดิจิทัล เขตอินโนเวชัน กรุงเทพฯ 10400</p>
+                        <button class="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition duration-300">
+                            <i class="fas fa-directions mr-2"></i>ดูเส้นทาง
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">คำถามที่พบบ่อย</h2>
+                <p class="text-xl text-gray-600">คำตอบสำหรับคำถามที่ลูกค้าสอบถามบ่อยที่สุด</p>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50">
+                        <span class="font-semibold">มีการรับประกันสินค้าหรือไม่?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">สินค้าทุกชิ้นที่เราจำหน่ายมีการรับประกันจากผู้ผลิต และเรายังให้การรับประกันเพิ่มเติมจากร้านอีก 1 ปี</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50">
+                        <span class="font-semibold">จัดส่งสินค้านานแค่ไหน?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">การจัดส่งภายในกรุงเทพฯ ใช้เวลา 1-2 วันทำการ และต่างจังหวัด 2-3 วันทำการ ขึ้นอยู่กับพื้นที่</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50">
+                        <span class="font-semibold">มีบริการติดตั้งหรือไม่?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">เรามีบริการติดตั้งและตั้งค่าเบื้องต้น รวมถึงการฝึกใช้งานเบื้องต้นให้กับลูกค้าโดยไม่คิดค่าใช้จ่ายเพิ่มเติม</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50">
+                        <span class="font-semibold">สามารถแลกเปลี่ยนสินค้าได้หรือไม่?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">ลูกค้าสามารถแลกเปลี่ยนสินค้าได้ภายใน 7 วัน โดยสินค้าต้องอยู่ในสภาพเดิมและมีใบเสร็จครบถ้วน</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-laptop text-2xl text-blue-400"></i>
+                        <span class="font-bold text-xl">ComputerStore</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">ร้านจำหน่ายคอมพิวเตอร์และอุปกรณ์ไอทีที่คุณไว้วางใจมาตลอด 10 ปี</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-line text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">เมนู</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">หน้าหลัก</a></li>
+                        <li><a href="product.html" class="text-gray-400 hover:text-white transition duration-300">สินค้า</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">บริการ</a></li>
+                        <li><a href="promotion.html" class="text-gray-400 hover:text-white transition duration-300">โปรโมชัน</a></li>
+                        <li><a href="article.html" class="text-gray-400 hover:text-white transition duration-300">บทความ</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">เกี่ยวกับเรา</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">หมวดสินค้า</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">โน๊ตบุ๊ค</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">คอมพิวเตอร์ตั้งโต๊ะ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">อุปกรณ์เสริม</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">ซอฟต์แวร์</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">ติดต่อเรา</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>123 ถนนเทคโนโลยี กรุงเทพฯ 10400</p>
+                        <p><i class="fas fa-phone mr-2"></i>02-123-4567</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@computerstore.com</p>
+                        <p><i class="fas fa-clock mr-2"></i>จันทร์-เสาร์ 9:00-18:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ComputerStore. สงวนลิขสิทธิ์ทุกการใช้งาน</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+
+        // FAQ functionality
+        document.querySelectorAll('.faq-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+    </script>
+</body>
+</html>

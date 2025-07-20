@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บริการของเรา - ComputerStore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-900 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-laptop text-2xl"></i>
+                        <span class="font-bold text-xl">ComputerStore</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-blue-200 transition duration-300 font-medium">หน้าหลัก</a>
+                    <a href="product.html" class="hover:text-blue-200 transition duration-300 font-medium">สินค้า</a>
+                    <a href="services.html" class="text-yellow-400 border-b-2 border-yellow-400 font-medium">บริการ</a>
+                    <a href="article.html" class="hover:text-blue-200 transition duration-300 font-medium">บทความ</a>
+                    <a href="about.html" class="hover:text-blue-200 transition duration-300 font-medium">เกี่ยวกับเรา</a>
+                    <a href="contact.html" class="hover:text-blue-200 transition duration-300 font-medium">ติดต่อเรา</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-btn text-white hover:text-blue-200">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-blue-800">
+                <a href="index.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">หน้าหลัก</a>
+                <a href="product.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">สินค้า</a>
+                <a href="services.html" class="block px-3 py-2 bg-blue-700 rounded-md">บริการ</a>
+                <a href="article.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">บทความ</a>
+                <a href="about.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">เกี่ยวกับเรา</a>
+                <a href="contact.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">ติดต่อเรา</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">บริการของเรา</h1>
+            <p class="text-xl text-blue-100">บริการครบวงจรสำหรับทุกความต้องการด้านไอที</p>
+        </div>
+    </section>
+
+    <!-- Main Services -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">บริการหลักของเรา</h2>
+                <p class="text-xl text-gray-600">ทีมผู้เชี่ยวชาญพร้อมให้บริการด้วยคุณภาพสูงสุด</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:border-blue-500 hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-tools text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">ซ่อมบำรุงคอมพิวเตอร์</h3>
+                    <p class="text-gray-600 text-center mb-6">
+                        บริการซ่อมและบำรุงรักษาคอมพิวเตอร์ โน๊ตบุ๊ค และอุปกรณ์ไอทีทุกประเภท
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            ตรวจสอบและวินิจฉัยปัญหาฟรี
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            ซ่อมฮาร์ดแวร์และซอฟต์แวร์
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            อัปเกรดประสิทธิภาพ
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-blue-600">เริ่มต้น ฿300</span>
+                        <button class="block w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-semibold transition duration-300 mt-4">
+                            สอบถามรายละเอียด
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:border-blue-500 hover:shadow-lg transition duration-300">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-cogs text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">ติดตั้งและตั้งค่าระบบ</h3>
+                    <p class="text-gray-600 text-center mb-6">
+                        บริการติดตั้งซอฟต์แวร์ ตั้งค่าระบบ และติดตั้งเครือข่าย
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            ติดตั้ง Operating System
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            ตั้งค่าเครือข่าย Wi-Fi
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            ติดตั้งโปรแกรมจำเป็น
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-blue-600">เริ่มต้น ฿500</span>
+                        <button class="block w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-semibold transition duration-300 mt-4">
+                            สอบถามรายละเอียด
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:border-blue-500 hover:shadow-lg transition duration-300">
+                    <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-graduation-cap text-2xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">อบรมและให้คำปรึกษา</h3>
+                    <p class="text-gray-600 text-center mb-6">
+                        อบรมการใช้งานคอมพิวเตอร์และให้คำปรึกษาด้านเทคโนโลยี
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            อบรมการใช้งานเบื้องต้น
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            คำปรึกษาการเลือกซื้อ
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            แนะนำการบำรุงรักษา
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-blue-600">ฟรี!</span>
+                        <button class="block w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-semibold transition duration-300 mt-4">
+                            จองเวลา
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:border-blue-500 hover:shadow-lg transition duration-300">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-hdd text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">กู้คืนข้อมูล</h3>
+                    <p class="text-gray-600 text-center mb-6">
+                        บริการกู้คืนข้อมูลที่สูญหายจากฮาร์ดดิสก์ SSD และอุปกรณ์เก็บข้อมูล
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            ตรวจสอบความเสียหายฟรี
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            กู้คืนไฟล์ภาพ เอกสาร
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            รับประกันความสำเร็จ
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-blue-600">เริ่มต้น ฿1,500</span>
+                        <button class="block w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-semibold transition duration-300 mt-4">
+                            สอบถามรายละเอียด
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:border-blue-500 hover:shadow-lg transition duration-300">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-virus text-2xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">กำจัดไวรัสและมัลแวร์</h3>
+                    <p class="text-gray-600 text-center mb-6">
+                        บริการทำความสะอาดไวรัส มัลแวร์ และปรับปรุงความปลอดภัย
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            สแกนและลบไวรัสทั้งหมด
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            ติดตั้ง Antivirus ฟรี
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            อัปเดตระบบรักษาความปลอดภัย
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-blue-600">เริ่มต้น ฿800</span>
+                        <button class="block w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-semibold transition duration-300 mt-4">
+                            สอบถามรายละเอียด
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:border-blue-500 hover:shadow-lg transition duration-300">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-home text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">บริการถึงบ้าน</h3>
+                    <p class="text-gray-600 text-center mb-6">
+                        ช่างเทคนิคไปให้บริการถึงบ้านหรือออฟฟิศของคุณ
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            บริการในกรุงเทพฯ และปริมณฑล
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            นัดหมายตามสะดวก
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            ช่างมืออาชีพ มีประสบการณ์
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-blue-600">+฿200 ค่าเดินทาง</span>
+                        <button class="block w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-semibold transition duration-300 mt-4">
+                            จองช่าง
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Process -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">ขั้นตอนการให้บริการ</h2>
+                <p class="text-xl text-gray-600">กระบวนการมาตรฐานที่ได้รับการออกแบบเพื่อความสะดวกของลูกค้า</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+                    <h3 class="text-xl font-semibold mb-2">ติดต่อและนัดหมาย</h3>
+                    <p class="text-gray-600">โทรศัพท์หรือแชทไลน์เพื่อแจ้งปัญหาและนัดหมายเวลา</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+                    <h3 class="text-xl font-semibold mb-2">ตรวจสอบและวินิจฉัย</h3>
+                    <p class="text-gray-600">ช่างเทคนิคจะตรวจสอบและวินิจฉัยปัญหาอย่างละเอียด</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-yellow-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+                    <h3 class="text-xl font-semibold mb-2">เสนอราคาและซ่อม</h3>
+                    <p class="text-gray-600">แจ้งราคาและวิธีการแก้ไข เมื่อตกลงแล้วจึงเริ่มดำเนินการ</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
+                    <h3 class="text-xl font-semibold mb-2">ทดสอบและส่งมอบ</h3>
+                    <p class="text-gray-600">ทดสอบการทำงานให้แน่ใจแล้วส่งมอบพร้อมการรับประกัน</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">ความคิดเห็นจากลูกค้า</h2>
+                <p class="text-xl text-gray-600">ฟังจากประสบการณ์จริงของลูกค้าที่ใช้บริการ</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"บริการเยี่ยมมาก! ช่างมาถึงบ้านตรงเวลา แก้ปัญหาคอมพิวเตอร์ได้อย่างรวดเร็ว และให้คำแนะนำดีๆ มากมาย"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold mr-3">ส</div>
+                        <div>
+                            <div class="font-semibold">คุณสมชาย</div>
+                            <div class="text-sm text-gray-500">ลูกค้าบริการถึงบ้าน</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"กู้คืนข้อมูลได้สำเร็จ 100% หลังจากฮาร์ดดิสก์เสีย คิดว่าข้อมูลหายแน่ๆ แต่ทีมงานช่วยได้อย่างยอดเยี่ยม"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-semibold mr-3">น</div>
+                        <div>
+                            <div class="font-semibold">คุณนิตยา</div>
+                            <div class="text-sm text-gray-500">ลูกค้าบริการกู้คืนข้อมูล</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"ราคาไม่แพง บริการดี มีการอธิบายขั้นตอนให้ฟังละเอียด รู้สึกปลอดภัยที่ได้ใช้บริการที่นี่"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white font-semibold mr-3">ป</div>
+                        <div>
+                            <div class="font-semibold">คุณประยุทธ</div>
+                            <div class="text-sm text-gray-500">ลูกค้าบริการซ่อมคอมพิวเตอร์</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">พร้อมให้บริการคุณแล้ว!</h2>
+            <p class="text-xl text-blue-100 mb-8">ติดต่อเราเพื่อรับคำปรึกษาฟรีและเลือกบริการที่เหมาะสมกับคุณ</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-lg font-semibold transition duration-300 inline-block">
+                    <i class="fas fa-phone mr-2"></i>ติดต่อเรา
+                </a>
+                <a href="tel:02-123-4567" class="border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg font-semibold transition duration-300 inline-block">
+                    <i class="fas fa-phone mr-2"></i>02-123-4567
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-laptop text-2xl text-blue-400"></i>
+                        <span class="font-bold text-xl">ComputerStore</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">ร้านจำหน่ายคอมพิวเตอร์และอุปกรณ์ไอทีที่คุณไว้วางใจมาตลอด 10 ปี</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-line text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">เมนู</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">หน้าหลัก</a></li>
+                        <li><a href="product.html" class="text-gray-400 hover:text-white transition duration-300">สินค้า</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">บริการ</a></li>
+                        <li><a href="article.html" class="text-gray-400 hover:text-white transition duration-300">บทความ</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">เกี่ยวกับเรา</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">หมวดสินค้า</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">โน๊ตบุ๊ค</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">คอมพิวเตอร์ตั้งโต๊ะ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">อุปกรณ์เสริม</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">ซอฟต์แวร์</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">ติดต่อเรา</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>123 ถนนเทคโนโลยี กรุงเทพฯ 10400</p>
+                        <p><i class="fas fa-phone mr-2"></i>02-123-4567</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@computerstore.com</p>
+                        <p><i class="fas fa-clock mr-2"></i>จันทร์-เสาร์ 9:00-18:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ComputerStore. สงวนลิขสิทธิ์ทุกการใช้งาน</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

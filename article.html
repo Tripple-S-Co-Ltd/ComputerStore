@@ -1,1 +1,389 @@
-<h1>Kittipong</h1> 
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บทความ - ComputerStore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-900 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-laptop text-2xl"></i>
+                        <span class="font-bold text-xl">ComputerStore</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-blue-200 transition duration-300 font-medium">หน้าหลัก</a>
+                    <a href="product.html" class="hover:text-blue-200 transition duration-300 font-medium">สินค้า</a>
+                    <a href="services.html" class="hover:text-blue-200 transition duration-300 font-medium">บริการ</a>
+                    <a href="promotion.html" class="hover:text-blue-200 transition duration-300 font-medium">โปรโมชัน</a>
+                    <a href="article.html" class="text-yellow-400 border-b-2 border-yellow-400 font-medium">บทความ</a>
+                    <a href="about.html" class="hover:text-blue-200 transition duration-300 font-medium">เกี่ยวกับเรา</a>
+                    <a href="contact.html" class="hover:text-blue-200 transition duration-300 font-medium">ติดต่อเรา</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-btn text-white hover:text-blue-200">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-blue-800">
+                <a href="index.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">หน้าหลัก</a>
+                <a href="product.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">สินค้า</a>
+                <a href="services.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">บริการ</a>
+                <a href="promotion.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">โปรโมชัน</a>
+                <a href="article.html" class="block px-3 py-2 bg-blue-700 rounded-md">บทความ</a>
+                <a href="about.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">เกี่ยวกับเรา</a>
+                <a href="contact.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">ติดต่อเรา</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">บทความและข่าวสาร</h1>
+            <p class="text-xl text-blue-100">อัปเดตข้อมูลล่าสุดเกี่ยวกับเทคโนโลยีและแนวโน้มของวงการไอที</p>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">บทความเด่น</h2>
+                <p class="text-xl text-gray-600">บทความที่น่าสนใจที่สุดในช่วงนี้</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <div class="h-64 md:h-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                            <i class="fas fa-microchip text-8xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">เทคโนโลยี</span>
+                            <span class="text-gray-500 ml-4">20 มกราคม 2025</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                            การเลือกซื้อ CPU ในปี 2025: AMD vs Intel ใครจะเป็นผู้ชนะ?
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            ในปี 2025 การแข่งขันระหว่าง AMD และ Intel ยังคงดุเดือดต่อเนื่อง ด้วยเทคโนโลยีใหม่ๆ ที่ออกมา 
+                            ทั้งในด้านประสิทธิภาพและประหยัดพลังงาน มาดูกันว่าควรเลือก CPU ตัวไหนดีสำหรับการใช้งานแต่ละประเภท
+                        </p>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold">
+                            อ่านต่อ <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Categories -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">หมวดหมู่บทความ</h2>
+                <p class="text-xl text-gray-600">เลือกหัวข้อที่คุณสนใจ</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <button class="category-btn bg-blue-600 text-white p-4 rounded-lg text-center hover:bg-blue-700 transition duration-300 active">
+                    <i class="fas fa-microchip text-2xl mb-2"></i>
+                    <div class="font-semibold">ฮาร์ดแวร์</div>
+                </button>
+                <button class="category-btn bg-white text-gray-700 p-4 rounded-lg text-center border-2 border-gray-200 hover:border-blue-600 hover:text-blue-600 transition duration-300">
+                    <i class="fas fa-code text-2xl mb-2"></i>
+                    <div class="font-semibold">ซอฟต์แวร์</div>
+                </button>
+                <button class="category-btn bg-white text-gray-700 p-4 rounded-lg text-center border-2 border-gray-200 hover:border-blue-600 hover:text-blue-600 transition duration-300">
+                    <i class="fas fa-gamepad text-2xl mb-2"></i>
+                    <div class="font-semibold">เกมมิ่ง</div>
+                </button>
+                <button class="category-btn bg-white text-gray-700 p-4 rounded-lg text-center border-2 border-gray-200 hover:border-blue-600 hover:text-blue-600 transition duration-300">
+                    <i class="fas fa-lightbulb text-2xl mb-2"></i>
+                    <div class="font-semibold">เทคนิคต่างๆ</div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-memory text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm font-semibold">ฮาร์ดแวร์</span>
+                            <span class="text-gray-500 ml-3 text-sm">18 มกราคม 2025</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 hover:text-blue-600 cursor-pointer">
+                            วิธีเลือก RAM ให้เหมาะกับการใช้งาน
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            การเลือก RAM ที่เหมาะสมจะช่วยให้คอมพิวเตอร์ทำงานได้อย่างมีประสิทธิภาพ มาดูวิธีเลือกกัน...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-user-circle text-gray-400 mr-2"></i>
+                                <span class="text-gray-600 text-sm">คิตติพงศ์ เทคโน</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">อ่านเพิ่มเติม</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-display text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm font-semibold">ฮาร์ดแวร์</span>
+                            <span class="text-gray-500 ml-3 text-sm">15 มกราคม 2025</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 hover:text-blue-600 cursor-pointer">
+                            จอมอนิเตอร์ 4K vs 1440p: เลือกแบบไหนดี?
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            การเลือกความละเอียดหน้าจอที่เหมาะสมขึ้นอยู่กับการใช้งาน งบประมาณ และสเปคของเครื่อง...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-user-circle text-gray-400 mr-2"></i>
+                                <span class="text-gray-600 text-sm">สุดา เทคโน</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">อ่านเพิ่มเติม</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm font-semibold">ซอฟต์แวร์</span>
+                            <span class="text-gray-500 ml-3 text-sm">12 มกราคม 2025</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 hover:text-blue-600 cursor-pointer">
+                            การป้องกันไวรัสในยุคดิจิทัล
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            ภัยคุกคามทางไซเบอร์มีมากขึ้นทุกวัน มาดูวิธีป้องกันที่มีประสิทธิภาพแบบไม่ต้องเสียเงินเยอะ...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-user-circle text-gray-400 mr-2"></i>
+                                <span class="text-gray-600 text-sm">มานะ บริการ</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">อ่านเพิ่มเติม</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center">
+                        <i class="fas fa-rocket text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm font-semibold">เทคนิค</span>
+                            <span class="text-gray-500 ml-3 text-sm">10 มกราคม 2025</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 hover:text-blue-600 cursor-pointer">
+                            เทคนิคเพิ่มความเร็วคอมพิวเตอร์
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            คอมพิวเตอร์ช้าลง? ลองวิธีง่ายๆ เหล่านี้เพื่อเพิ่มประสิทธิภาพโดยไม่ต้องอัปเกรดฮาร์ดแวร์...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-user-circle text-gray-400 mr-2"></i>
+                                <span class="text-gray-600 text-sm">คิตติพงศ์ เทคโน</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">อ่านเพิ่มเติม</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center">
+                        <i class="fas fa-vr-cardboard text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm font-semibold">เกมมิ่ง</span>
+                            <span class="text-gray-500 ml-3 text-sm">8 มกราคม 2025</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 hover:text-blue-600 cursor-pointer">
+                            VR Gaming: อนาคตของวงการเกม
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            เทคโนโลยี VR กำลังพัฒนาอย่างรวดเร็ว และเริ่มเข้าถึงได้มากขึ้น มาดูว่าควรเตรียมตัวอย่างไร...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-user-circle text-gray-400 mr-2"></i>
+                                <span class="text-gray-600 text-sm">สุดา เทคโน</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">อ่านเพิ่มเติม</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center">
+                        <i class="fas fa-cloud text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-teal-100 text-teal-800 px-2 py-1 rounded text-sm font-semibold">ซอฟต์แวร์</span>
+                            <span class="text-gray-500 ml-3 text-sm">5 มกราคม 2025</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 hover:text-blue-600 cursor-pointer">
+                            Cloud Storage: เลือกอันไหนดี?
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            การเก็บข้อมูลบนคลาวด์กลายเป็นสิ่งจำเป็น มาเปรียบเทียบบริการต่างๆ เพื่อเลือกที่เหมาะสม...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-user-circle text-gray-400 mr-2"></i>
+                                <span class="text-gray-600 text-sm">มานะ บริการ</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">อ่านเพิ่มเติม</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition duration-300">
+                    โหลดบทความเพิ่มเติม
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">ติดตามข่าวสารใหม่ๆ</h2>
+            <p class="text-xl text-blue-100 mb-8">รับข้อมูลข่าวสารและบทความใหม่ๆ ก่อนใครทาง Email</p>
+            <div class="max-w-md mx-auto">
+                <div class="flex">
+                    <input type="email" placeholder="กรอกอีเมลของคุณ" 
+                           class="flex-1 px-4 py-3 rounded-l-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                    <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-r-lg font-semibold transition duration-300">
+                        สมัครสมาชิก
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-laptop text-2xl text-blue-400"></i>
+                        <span class="font-bold text-xl">ComputerStore</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">ร้านจำหน่ายคอมพิวเตอร์และอุปกรณ์ไอทีที่คุณไว้วางใจมาตลอด 10 ปี</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-line text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">เมนู</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">หน้าหลัก</a></li>
+                        <li><a href="product.html" class="text-gray-400 hover:text-white transition duration-300">สินค้า</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">บริการ</a></li>
+                        <li><a href="promotion.html" class="text-gray-400 hover:text-white transition duration-300">โปรโมชัน</a></li>
+                        <li><a href="article.html" class="text-gray-400 hover:text-white transition duration-300">บทความ</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">เกี่ยวกับเรา</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">หมวดสินค้า</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">โน๊ตบุ๊ค</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">คอมพิวเตอร์ตั้งโต๊ะ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">อุปกรณ์เสริม</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">ซอฟต์แวร์</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">ติดต่อเรา</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>123 ถนนเทคโนโลยี กรุงเทพฯ 10400</p>
+                        <p><i class="fas fa-phone mr-2"></i>02-123-4567</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@computerstore.com</p>
+                        <p><i class="fas fa-clock mr-2"></i>จันทร์-เสาร์ 9:00-18:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ComputerStore. สงวนลิขสิทธิ์ทุกการใช้งาน</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+
+        // Category filter functionality
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.category-btn').forEach(b => {
+                    b.classList.remove('bg-blue-600', 'text-white');
+                    b.classList.add('bg-white', 'text-gray-700', 'border-2', 'border-gray-200');
+                });
+                
+                // Add active class to clicked button
+                this.classList.remove('bg-white', 'text-gray-700', 'border-2', 'border-gray-200');
+                this.classList.add('bg-blue-600', 'text-white');
+            });
+        });
+    </script>
+</body>
+</html> 

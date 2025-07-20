@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรโมชันและข้อเสนอพิเศษ - ComputerStore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-900 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-laptop text-2xl"></i>
+                        <span class="font-bold text-xl">ComputerStore</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-blue-200 transition duration-300 font-medium">หน้าหลัก</a>
+                    <a href="product.html" class="hover:text-blue-200 transition duration-300 font-medium">สินค้า</a>
+                    <a href="services.html" class="hover:text-blue-200 transition duration-300 font-medium">บริการ</a>
+                    <a href="promotion.html" class="text-yellow-400 border-b-2 border-yellow-400 font-medium">โปรโมชัน</a>
+                    <a href="article.html" class="hover:text-blue-200 transition duration-300 font-medium">บทความ</a>
+                    <a href="about.html" class="hover:text-blue-200 transition duration-300 font-medium">เกี่ยวกับเรา</a>
+                    <a href="contact.html" class="hover:text-blue-200 transition duration-300 font-medium">ติดต่อเรา</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-btn text-white hover:text-blue-200">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-blue-800">
+                <a href="index.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">หน้าหลัก</a>
+                <a href="product.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">สินค้า</a>
+                <a href="services.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">บริการ</a>
+                <a href="promotion.html" class="block px-3 py-2 bg-blue-700 rounded-md">โปรโมชัน</a>
+                <a href="article.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">บทความ</a>
+                <a href="about.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">เกี่ยวกับเรา</a>
+                <a href="contact.html" class="block px-3 py-2 hover:bg-blue-700 rounded-md">ติดต่อเรา</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-red-600 via-pink-600 to-purple-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">🔥 โปรโมชันสุดพิเศษ 🔥</h1>
+            <p class="text-xl md:text-2xl text-pink-100 mb-6">ลดราคาสูงสุด 50% สำหรับสินค้าคอมพิวเตอร์และอุปกรณ์ไอที</p>
+            <div class="bg-yellow-400 text-gray-900 inline-block px-6 py-3 rounded-full font-bold text-lg animate-pulse">
+                <i class="fas fa-clock mr-2"></i>เหลือเวลาอีก 15 วัน!
+            </div>
+        </div>
+    </section>
+
+    <!-- Flash Sale Banner -->
+    <section class="bg-gradient-to-r from-yellow-400 to-orange-500 py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center space-x-4 text-black font-bold">
+                <i class="fas fa-bolt text-2xl animate-bounce"></i>
+                <span class="text-xl">Flash Sale วันนี้เท่านั้น! ลดเพิ่ม 10% เมื่อซื้อครบ 20,000 บาท</span>
+                <i class="fas fa-bolt text-2xl animate-bounce"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Deals -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">ดีลเด็ดประจำเดือน</h2>
+                <p class="text-xl text-gray-600">สินค้าคุณภาพดีราคาพิเศษ จำนวนจำกัด!</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Deal 1 -->
+                <div class="bg-white border-2 border-red-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 relative">
+                    <div class="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold z-10">
+                        ลด 40%
+                    </div>
+                    <div class="absolute top-4 right-4 bg-yellow-400 text-black px-2 py-1 rounded text-xs font-bold z-10">
+                        เหลือ 5 ชิ้น!
+                    </div>
+                    <div class="h-48 bg-gradient-to-br from-blue-200 to-blue-400 flex items-center justify-center">
+                        <i class="fas fa-laptop text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Gaming Laptop ASUS ROG</h3>
+                        <p class="text-gray-600 mb-4">Intel i7-12700H, RTX 3070, 16GB RAM, 512GB SSD</p>
+                        <div class="flex items-center mb-4">
+                            <span class="text-gray-400 line-through text-lg mr-2">฿65,990</span>
+                            <span class="text-3xl font-bold text-red-600">฿39,594</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-gray-200 rounded-full h-2 flex-1 mr-3">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                            <span class="text-sm text-gray-600">ขายแล้ว 80%</span>
+                        </div>
+                        <button class="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition duration-300">
+                            <i class="fas fa-shopping-cart mr-2"></i>ซื้อทันที
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Deal 2 -->
+                <div class="bg-white border-2 border-green-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 relative">
+                    <div class="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold z-10">
+                        ลด 35%
+                    </div>
+                    <div class="absolute top-4 right-4 bg-yellow-400 text-black px-2 py-1 rounded text-xs font-bold z-10">
+                        เหลือ 12 ชิ้น!
+                    </div>
+                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-400 flex items-center justify-center">
+                        <i class="fas fa-desktop text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">PC Gaming Set ครบชุด</h3>
+                        <p class="text-gray-600 mb-4">AMD Ryzen 5, GTX 1660 Super + จอมอนิเตอร์ + คีย์บอร์ด</p>
+                        <div class="flex items-center mb-4">
+                            <span class="text-gray-400 line-through text-lg mr-2">฿42,000</span>
+                            <span class="text-3xl font-bold text-green-600">฿27,300</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-gray-200 rounded-full h-2 flex-1 mr-3">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 60%"></div>
+                            </div>
+                            <span class="text-sm text-gray-600">ขายแล้ว 60%</span>
+                        </div>
+                        <button class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition duration-300">
+                            <i class="fas fa-shopping-cart mr-2"></i>ซื้อทันที
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Deal 3 -->
+                <div class="bg-white border-2 border-blue-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 relative">
+                    <div class="absolute top-4 left-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold z-10">
+                        ลด 50%
+                    </div>
+                    <div class="absolute top-4 right-4 bg-yellow-400 text-black px-2 py-1 rounded text-xs font-bold z-10">
+                        เหลือ 25 ชิ้น!
+                    </div>
+                    <div class="h-48 bg-gradient-to-br from-purple-200 to-purple-400 flex items-center justify-center">
+                        <i class="fas fa-headphones text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Gaming Accessories Bundle</h3>
+                        <p class="text-gray-600 mb-4">เมาส์ + คีย์บอร์ด + หูฟัง + mousepad เกมมิ่ง</p>
+                        <div class="flex items-center mb-4">
+                            <span class="text-gray-400 line-through text-lg mr-2">฿8,500</span>
+                            <span class="text-3xl font-bold text-blue-600">฿4,250</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-gray-200 rounded-full h-2 flex-1 mr-3">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 40%"></div>
+                            </div>
+                            <span class="text-sm text-gray-600">ขายแล้ว 40%</span>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition duration-300">
+                            <i class="fas fa-shopping-cart mr-2"></i>ซื้อทันที
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotion Categories -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">โปรโมชันตามหมวดหมู่</h2>
+                <p class="text-xl text-gray-600">เลือกโปรโมชันตามประเภทสินค้าที่คุณสนใจ</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-32 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-laptop text-4xl text-white"></i>
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-bold text-lg mb-2">โน๊ตบุ๊ค</h3>
+                        <p class="text-red-600 font-semibold">ลดสูงสุด 30%</p>
+                        <p class="text-sm text-gray-600 mb-3">โน๊ตบุ๊คทุกยี่ห้อ</p>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition duration-300">
+                            ดูโปรโมชัน
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-32 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-desktop text-4xl text-white"></i>
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-bold text-lg mb-2">คอมพิวเตอร์ตั้งโต๊ะ</h3>
+                        <p class="text-red-600 font-semibold">ลดสูงสุด 25%</p>
+                        <p class="text-sm text-gray-600 mb-3">PC ทุกสเปค</p>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-700 transition duration-300">
+                            ดูโปรโมชัน
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-32 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-mouse text-4xl text-white"></i>
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-bold text-lg mb-2">อุปกรณ์เสริม</h3>
+                        <p class="text-red-600 font-semibold">ซื้อ 2 แถม 1</p>
+                        <p class="text-sm text-gray-600 mb-3">เมาส์ คีย์บอร์ด หูฟัง</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-purple-700 transition duration-300">
+                            ดูโปรโมชัน
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-32 bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
+                        <i class="fas fa-cog text-4xl text-white"></i>
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-bold text-lg mb-2">อะไหล่คอมพิวเตอร์</h3>
+                        <p class="text-red-600 font-semibold">ลดสูงสุด 40%</p>
+                        <p class="text-sm text-gray-600 mb-3">CPU, RAM, VGA</p>
+                        <button class="bg-orange-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-orange-700 transition duration-300">
+                            ดูโปรโมชัน
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">ข้อเสนอพิเศษ</h2>
+                <p class="text-xl text-gray-600">โปรโมชันเพิ่มเติมที่คุณไม่ควรพลาด</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Trade-in Program -->
+                <div class="bg-gradient-to-r from-blue-500 to-blue-700 rounded-lg p-8 text-white">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-exchange-alt text-4xl mr-4"></i>
+                        <div>
+                            <h3 class="text-2xl font-bold">โปรแกรมแลกเปลี่ยน</h3>
+                            <p class="text-blue-100">เอาเครื่องเก่ามาแลกเครื่องใหม่</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            รับประเมินราคาฟรี
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            รับเงินเพิ่มสูงสุด 15,000 บาท
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            บริการลบข้อมูลอย่างปลอดภัย
+                        </li>
+                    </ul>
+                    <button class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                        สอบถามโปรแกรม
+                    </button>
+                </div>
+
+                <!-- Student Discount -->
+                <div class="bg-gradient-to-r from-green-500 to-green-700 rounded-lg p-8 text-white">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-graduation-cap text-4xl mr-4"></i>
+                        <div>
+                            <h3 class="text-2xl font-bold">ส่วนลดนักเรียน นักศึกษา</h3>
+                            <p class="text-green-100">ส่วนลดพิเศษสำหรับการศึกษา</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            ลดเพิ่ม 10% จากราคาปกติ
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            ผ่อน 0% นาน 10 เดือน
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            แถมโปรแกรมจำเป็นฟรี
+                        </li>
+                    </ul>
+                    <button class="bg-white text-green-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                        ขอส่วนลด
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bundle Deals -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">ดีลชุดคอมโบ</h2>
+                <p class="text-xl text-gray-600">ซื้อเป็นชุดคุ้มกว่า ประหยัดมากขึ้น</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Bundle 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-gradient-to-r from-red-500 to-pink-500 text-white p-6">
+                        <h3 class="text-2xl font-bold mb-2">🎮 Gaming Combo Ultimate</h3>
+                        <p class="text-red-100">ชุดเกมมิ่งครบเครื่อง พร้อมเล่นทันที</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-3 mb-6">
+                            <div class="flex justify-between items-center">
+                                <span>Gaming PC (RTX 3070)</span>
+                                <span class="text-gray-500">฿45,000</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>จอมอนิเตอร์ 144Hz 27"</span>
+                                <span class="text-gray-500">฿8,500</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Gaming Chair</span>
+                                <span class="text-gray-500">฿6,500</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Keyboard + Mouse + Headset</span>
+                                <span class="text-gray-500">฿5,000</span>
+                            </div>
+                            <hr class="my-4">
+                            <div class="flex justify-between items-center text-lg">
+                                <span>ราคารวม</span>
+                                <span class="line-through text-gray-500">฿65,000</span>
+                            </div>
+                            <div class="flex justify-between items-center text-2xl font-bold text-red-600">
+                                <span>ราคาชุดคอมโบ</span>
+                                <span>฿49,999</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                                    ประหยัด ฿15,001!
+                                </span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition duration-300">
+                            <i class="fas fa-shopping-cart mr-2"></i>สั่งซื้อชุดคอมโบ
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bundle 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-gradient-to-r from-blue-500 to-indigo-500 text-white p-6">
+                        <h3 class="text-2xl font-bold mb-2">💼 Office Pro Package</h3>
+                        <p class="text-blue-100">ชุดทำงานออฟฟิศครบครัน มีประสิทธิภาพ</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-3 mb-6">
+                            <div class="flex justify-between items-center">
+                                <span>Office PC (Intel i5)</span>
+                                <span class="text-gray-500">฿25,000</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>จอมอนิเตอร์ 24" IPS</span>
+                                <span class="text-gray-500">฿4,500</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>เครื่องพิมพ์ All-in-One</span>
+                                <span class="text-gray-500">฿3,500</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Office 365 + Antivirus</span>
+                                <span class="text-gray-500">฿2,000</span>
+                            </div>
+                            <hr class="my-4">
+                            <div class="flex justify-between items-center text-lg">
+                                <span>ราคารวม</span>
+                                <span class="line-through text-gray-500">฿35,000</span>
+                            </div>
+                            <div class="flex justify-between items-center text-2xl font-bold text-blue-600">
+                                <span>ราคาชุดคอมโบ</span>
+                                <span>฿27,999</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                                    ประหยัด ฿7,001!
+                                </span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition duration-300">
+                            <i class="fas fa-shopping-cart mr-2"></i>สั่งซื้อชุดคอมโบ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms and Conditions -->
+    <section class="py-12 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">เงื่อนไขและข้อกำหนด</h3>
+                <div class="grid md:grid-cols-2 gap-8 text-sm text-gray-600">
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-3">เงื่อนไขทั่วไป</h4>
+                        <ul class="space-y-2">
+                            <li>• โปรโมชันมีผลตั้งแต่ 1-31 มกราคม 2025</li>
+                            <li>• ราคาโปรโมชันรวมภาษีมูลค่าเพิ่มแล้ว</li>
+                            <li>• สินค้าโปรโมชันมีจำนวนจำกัด</li>
+                            <li>• ไม่สามารถใช้ร่วมกับโปรโมชันอื่นได้</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-3">การรับประกัน</h4>
+                        <ul class="space-y-2">
+                            <li>• สินค้าทุกชิ้นรับประกันตามเงื่อนไขผู้ผลิต</li>
+                            <li>• บริการหลังการขายครบครัน</li>
+                            <li>• สามารถแลกเปลี่ยนได้ภายใน 7 วัน</li>
+                            <li>• ติดต่อสอบถาม 02-123-4567</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-laptop text-2xl text-blue-400"></i>
+                        <span class="font-bold text-xl">ComputerStore</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">ร้านจำหน่ายคอมพิวเตอร์และอุปกรณ์ไอทีที่คุณไว้วางใจมาตลอด 10 ปี</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-line text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">เมนู</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">หน้าหลัก</a></li>
+                        <li><a href="product.html" class="text-gray-400 hover:text-white transition duration-300">สินค้า</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">บริการ</a></li>
+                        <li><a href="promotion.html" class="text-gray-400 hover:text-white transition duration-300">โปรโมชัน</a></li>
+                        <li><a href="article.html" class="text-gray-400 hover:text-white transition duration-300">บทความ</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">เกี่ยวกับเรา</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">หมวดสินค้า</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">โน๊ตบุ๊ค</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">คอมพิวเตอร์ตั้งโต๊ะ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">อุปกรณ์เสริม</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">ซอฟต์แวร์</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">ติดต่อเรา</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>123 ถนนเทคโนโลยี กรุงเทพฯ 10400</p>
+                        <p><i class="fas fa-phone mr-2"></i>02-123-4567</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@computerstore.com</p>
+                        <p><i class="fas fa-clock mr-2"></i>จันทร์-เสาร์ 9:00-18:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ComputerStore. สงวนลิขสิทธิ์ทุกการใช้งาน</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+
+        // Countdown timer (example)
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const countdownDate = new Date("2025-01-31 23:59:59").getTime();
+            const distance = countdownDate - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            
+            if (distance > 0) {
+                document.querySelector('.animate-pulse').innerHTML = 
+                    `<i class="fas fa-clock mr-2"></i>เหลือเวลาอีก ${days} วัน!`;
+            }
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000 * 60 * 60); // Update every hour
+    </script>
+</body>
+</html>

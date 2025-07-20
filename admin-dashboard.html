@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบหลังบ้าน - ComputerStore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .slide-in-up {
+            animation: slideInUp 0.6s ease-out;
+        }
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .scale-in {
+            animation: scaleIn 0.6s ease-out;
+        }
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .counter-animation {
+            animation: countUp 2s ease-out;
+        }
+        @keyframes countUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .chart-container {
+            position: relative;
+            height: 300px;
+            animation: chartSlideIn 1s ease-out;
+        }
+        @keyframes chartSlideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .pulse-glow {
+            animation: pulseGlow 2s infinite;
+        }
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+            50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.8), 0 0 30px rgba(59, 130, 246, 0.4); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-900 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-laptop text-2xl"></i>
+                        <span class="font-bold text-xl">ComputerStore</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="product.html" class="hover:text-blue-200 transition duration-300">
+                        <i class="fas fa-store mr-2"></i>ร้านค้า
+                    </a>
+                    <div class="relative">
+                        <button class="user-dropdown-btn flex items-center space-x-2 bg-blue-800 hover:bg-blue-700 px-4 py-2 rounded-lg transition duration-300">
+                            <i class="fas fa-user-shield text-xl"></i>
+                            <span class="font-medium">Admin</span>
+                            <i class="fas fa-chevron-down text-sm"></i>
+                        </button>
+                        <div class="user-dropdown hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border z-50">
+                            <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition duration-200">
+                                <i class="fas fa-edit mr-2"></i>แก้ไขข้อมูล
+                            </a>
+                            <a href="admin-dashboard.html" class="block px-4 py-3 text-blue-600 bg-blue-50 transition duration-200">
+                                <i class="fas fa-tachometer-alt mr-2"></i>ระบบหลังบ้าน
+                            </a>
+                            <div class="border-t border-gray-200"></div>
+                            <a href="#" class="block px-4 py-3 text-red-600 hover:bg-red-50 transition duration-200">
+                                <i class="fas fa-sign-out-alt mr-2"></i>ออกจากระบบ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="gradient-bg text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between">
+                <div class="slide-in-up">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-4">
+                        <i class="fas fa-tachometer-alt mr-3"></i>ระบบหลังบ้าน
+                    </h1>
+                    <p class="text-lg text-purple-100">จัดการและติดตามประสิทธิภาพร้านค้าของคุณ</p>
+                </div>
+                <div class="slide-in-up">
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4 text-center">
+                        <div class="text-sm text-purple-100">อัพเดทล่าสุด</div>
+                        <div class="text-lg font-bold" id="currentTime"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Cards -->
+    <section class="py-8 -mt-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Users Card -->
+                <div class="stat-card bg-white rounded-lg shadow-lg p-6 scale-in pulse-glow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm font-medium text-gray-600">จำนวนผู้ใช้</p>
+                            <p class="text-3xl font-bold text-blue-600 counter-animation" data-target="1248">0</p>
+                            <div class="flex items-center text-sm text-green-600 mt-2">
+                                <i class="fas fa-arrow-up mr-1"></i>
+                                <span>+12.5% จากเดือนที่แล้ว</span>
+                            </div>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-full">
+                            <i class="fas fa-users text-2xl text-blue-600"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Card -->
+                <div class="stat-card bg-white rounded-lg shadow-lg p-6 scale-in pulse-glow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm font-medium text-gray-600">จำนวนสินค้า</p>
+                            <p class="text-3xl font-bold text-green-600 counter-animation" data-target="89">0</p>
+                            <div class="flex items-center text-sm text-green-600 mt-2">
+                                <i class="fas fa-arrow-up mr-1"></i>
+                                <span>+5 รายการใหม่</span>
+                            </div>
+                        </div>
+                        <div class="bg-green-100 p-3 rounded-full">
+                            <i class="fas fa-box text-2xl text-green-600"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orders Card -->
+                <div class="stat-card bg-white rounded-lg shadow-lg p-6 scale-in pulse-glow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm font-medium text-gray-600">ยอดสั่งซื้อ</p>
+                            <p class="text-3xl font-bold text-purple-600 counter-animation" data-target="324">0</p>
+                            <div class="flex items-center text-sm text-green-600 mt-2">
+                                <i class="fas fa-arrow-up mr-1"></i>
+                                <span>+18.2% จากเดือนที่แล้ว</span>
+                            </div>
+                        </div>
+                        <div class="bg-purple-100 p-3 rounded-full">
+                            <i class="fas fa-shopping-cart text-2xl text-purple-600"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Revenue Card -->
+                <div class="stat-card bg-white rounded-lg shadow-lg p-6 scale-in pulse-glow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm font-medium text-gray-600">ยอดขาย (บาท)</p>
+                            <p class="text-3xl font-bold text-orange-600 counter-animation" data-target="2487650">0</p>
+                            <div class="flex items-center text-sm text-green-600 mt-2">
+                                <i class="fas fa-arrow-up mr-1"></i>
+                                <span>+24.8% จากเดือนที่แล้ว</span>
+                            </div>
+                        </div>
+                        <div class="bg-orange-100 p-3 rounded-full">
+                            <i class="fas fa-chart-line text-2xl text-orange-600"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charts Section -->
+    <section class="py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Sales Chart -->
+                <div class="bg-white rounded-lg shadow-lg p-6 slide-in-up">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-bold text-gray-900">
+                            <i class="fas fa-chart-line text-blue-600 mr-2"></i>ยอดขายรายเดือน
+                        </h3>
+                        <div class="flex space-x-2">
+                            <div class="flex items-center">
+                                <div class="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>
+                                <span class="text-sm text-gray-600">ปีนี้</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+                                <span class="text-sm text-gray-600">ปีที่แล้ว</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Product Categories Chart -->
+                <div class="bg-white rounded-lg shadow-lg p-6 slide-in-up">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">
+                        <i class="fas fa-chart-pie text-green-600 mr-2"></i>หมวดหมู่สินค้า
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="categoryChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- User Growth Chart -->
+                <div class="bg-white rounded-lg shadow-lg p-6 slide-in-up">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">
+                        <i class="fas fa-chart-area text-purple-600 mr-2"></i>การเติบโตของผู้ใช้
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="userGrowthChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Revenue Breakdown -->
+                <div class="bg-white rounded-lg shadow-lg p-6 slide-in-up">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">
+                        <i class="fas fa-chart-bar text-orange-600 mr-2"></i>รายได้ตามช่วงราคา
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Activity -->
+    <section class="py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-lg shadow-lg p-6 slide-in-up">
+                <h3 class="text-xl font-bold text-gray-900 mb-6">
+                    <i class="fas fa-history text-indigo-600 mr-2"></i>กิจกรรมล่าสุด
+                </h3>
+                <div class="space-y-4">
+                    <div class="flex items-center p-4 bg-blue-50 rounded-lg">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-shopping-cart text-blue-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-semibold text-gray-900">คำสั่งซื้อใหม่ #1025</p>
+                            <p class="text-sm text-gray-600">ลูกค้าสั่งซื้อ MacBook Pro M3 จำนวน ฿89,900</p>
+                        </div>
+                        <span class="text-sm text-blue-600">2 นาทีที่แล้ว</span>
+                    </div>
+                    <div class="flex items-center p-4 bg-green-50 rounded-lg">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-user-plus text-green-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-semibold text-gray-900">สมาชิกใหม่</p>
+                            <p class="text-sm text-gray-600">ผู้ใช้ใหม่ลงทะเบียนเข้าระบบ</p>
+                        </div>
+                        <span class="text-sm text-green-600">5 นาทีที่แล้ว</span>
+                    </div>
+                    <div class="flex items-center p-4 bg-purple-50 rounded-lg">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-box text-purple-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-semibold text-gray-900">อัปเดทสินค้า</p>
+                            <p class="text-sm text-gray-600">เพิ่มสินค้าใหม่ iPhone 15 Pro Max</p>
+                        </div>
+                        <span class="text-sm text-purple-600">15 นาทีที่แล้ว</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <i class="fas fa-laptop text-2xl text-blue-400"></i>
+                <span class="font-bold text-xl">ComputerStore</span>
+            </div>
+            <p class="text-gray-400">&copy; 2025 ComputerStore. สงวนลิขสิทธิ์ทุกการใช้งาน</p>
+        </div>
+    </footer>
+
+    <script>
+        // User dropdown toggle
+        document.querySelector('.user-dropdown-btn').addEventListener('click', function() {
+            document.querySelector('.user-dropdown').classList.toggle('hidden');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.relative')) {
+                document.querySelector('.user-dropdown').classList.add('hidden');
+            }
+        });
+
+        // Update current time
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('th-TH', {
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+            document.getElementById('currentTime').textContent = timeString;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.counter-animation');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const increment = target / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target.toLocaleString();
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current).toLocaleString();
+                    }
+                }, 30);
+            });
+        }
+
+        // Initialize charts
+        function initCharts() {
+            // Sales Chart
+            const salesCtx = document.getElementById('salesChart').getContext('2d');
+            new Chart(salesCtx, {
+                type: 'line',
+                data: {
+                    labels: ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'],
+                    datasets: [{
+                        label: 'ปี 2025',
+                        data: [180000, 220000, 190000, 280000, 310000, 350000, 400000, 380000, 420000, 390000, 450000, 480000],
+                        borderColor: 'rgb(59, 130, 246)',
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }, {
+                        label: 'ปี 2024',
+                        data: [150000, 180000, 160000, 220000, 240000, 280000, 320000, 300000, 340000, 310000, 360000, 380000],
+                        borderColor: 'rgb(34, 197, 94)',
+                        backgroundColor: 'rgba(34, 197, 94, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: {
+                        duration: 2000,
+                        easing: 'easeInOutQuart'
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return '฿' + (value / 1000) + 'K';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Category Chart
+            const categoryCtx = document.getElementById('categoryChart').getContext('2d');
+            new Chart(categoryCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['คอมพิวเตอร์', 'โน้ตบุ๊ค', 'อุปกรณ์เสริม', 'มือถือ', 'แท็บเล็ต'],
+                    datasets: [{
+                        data: [35, 25, 20, 15, 5],
+                        backgroundColor: [
+                            'rgba(59, 130, 246, 0.8)',
+                            'rgba(34, 197, 94, 0.8)',
+                            'rgba(147, 51, 234, 0.8)',
+                            'rgba(249, 115, 22, 0.8)',
+                            'rgba(239, 68, 68, 0.8)'
+                        ],
+                        borderWidth: 2,
+                        borderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: {
+                        animateRotate: true,
+                        duration: 2000
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                padding: 20,
+                                usePointStyle: true
+                            }
+                        }
+                    }
+                }
+            });
+
+            // User Growth Chart
+            const userCtx = document.getElementById('userGrowthChart').getContext('2d');
+            new Chart(userCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.'],
+                    datasets: [{
+                        label: 'ผู้ใช้ใหม่',
+                        data: [85, 92, 78, 105, 118, 124],
+                        backgroundColor: 'rgba(147, 51, 234, 0.8)',
+                        borderColor: 'rgba(147, 51, 234, 1)',
+                        borderWidth: 2,
+                        borderRadius: 5
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: {
+                        duration: 2000,
+                        easing: 'easeInOutBounce'
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            // Revenue Chart
+            const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+            new Chart(revenueCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['< ฿10K', '฿10K-50K', '฿50K-100K', '฿100K+'],
+                    datasets: [{
+                        label: 'รายได้ (บาท)',
+                        data: [450000, 890000, 720000, 980000],
+                        backgroundColor: [
+                            'rgba(249, 115, 22, 0.8)',
+                            'rgba(34, 197, 94, 0.8)',
+                            'rgba(59, 130, 246, 0.8)',
+                            'rgba(147, 51, 234, 0.8)'
+                        ],
+                        borderWidth: 2,
+                        borderColor: '#fff',
+                        borderRadius: 5
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: {
+                        duration: 2000,
+                        easing: 'easeInOutQuart'
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return '฿' + (value / 1000) + 'K';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Add smooth animations with delays
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate counters
+            setTimeout(animateCounters, 500);
+            
+            // Initialize charts
+            setTimeout(initCharts, 800);
+            
+            // Add animation delays to cards
+            document.querySelectorAll('.scale-in').forEach((element, index) => {
+                element.style.animationDelay = `${index * 0.1}s`;
+            });
+            
+            document.querySelectorAll('.slide-in-up').forEach((element, index) => {
+                element.style.animationDelay = `${(index + 4) * 0.1}s`;
+            });
+        });
+    </script>
+</body>
+</html>
