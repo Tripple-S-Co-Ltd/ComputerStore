@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>เกี่ยวกับเรา - ComputerStore</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .rolling-number {
+            display: inline-block;
+            font-variant-numeric: tabular-nums;
+            background: linear-gradient(90deg, #3b82f6, #06b6d4);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
 </head>
+
 <body class="bg-gray-50">
-<!-- Navigation -->
+    <!-- Navigation -->
     <nav class="bg-blue-900 text-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
@@ -22,24 +34,29 @@
                     <a href="index.html" class="hover:text-blue-200 transition duration-300 font-medium">หน้าหลัก</a>
                     <a href="product.html" class="hover:text-blue-200 transition duration-300 font-medium">สินค้า</a>
                     <a href="services.html" class="hover:text-blue-200 transition duration-300 font-medium">บริการ</a>
-                    <a href="promotion.html" class="hover:text-blue-200 transition duration-300 font-medium">โปรโมชัน</a>
+                    <a href="promotion.html"
+                        class="hover:text-blue-200 transition duration-300 font-medium">โปรโมชัน</a>
                     <a href="article.html" class="hover:text-blue-200 transition duration-300 font-medium">บทความ</a>
-                    <a href="about.html" class="text-yellow-400 border-b-2 border-yellow-400 font-medium">เกี่ยวกับเรา</a>
+                    <a href="about.html"
+                        class="text-yellow-400 border-b-2 border-yellow-400 font-medium">เกี่ยวกับเรา</a>
                     <a href="contact.html" class="hover:text-blue-200 transition duration-300 font-medium">ติดต่อเรา</a>
                 </div>
                 <div class="flex items-center space-x-4">
                     <!-- User Dropdown -->
                     <div class="relative">
-                        <button class="user-dropdown-btn flex items-center space-x-2 bg-blue-800 hover:bg-blue-700 px-4 py-2 rounded-lg transition duration-300">
+                        <button
+                            class="user-dropdown-btn flex items-center space-x-2 bg-blue-800 hover:bg-blue-700 px-4 py-2 rounded-lg transition duration-300">
                             <i class="fas fa-user-circle text-xl"></i>
                             <span class="font-medium">Admin</span>
                             <i class="fas fa-chevron-down text-sm"></i>
                         </button>
-                        <div class="user-dropdown hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border z-50">
+                        <div
+                            class="user-dropdown hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border z-50">
                             <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition duration-200">
                                 <i class="fas fa-edit mr-2"></i>แก้ไขข้อมูล
                             </a>
-                            <a href="admin-dashboard.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition duration-200">
+                            <a href="admin-dashboard.html"
+                                class="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition duration-200">
                                 <i class="fas fa-tachometer-alt mr-2"></i>ระบบหลังบ้าน
                             </a>
                             <div class="border-t border-gray-200"></div>
@@ -85,27 +102,36 @@
                 <div>
                     <h2 class="text-3xl font-bold text-gray-900 mb-6">เรื่องราวของเรา</h2>
                     <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-                        ComputerStore เริ่มต้นขึ้นในปี 2015 ด้วยวิสัยทัศน์ที่จะเป็นผู้นำในการจำหน่ายคอมพิวเตอร์และอุปกรณ์ไอทีคุณภาพสูง 
+                        ComputerStore เริ่มต้นขึ้นในปี 2015
+                        ด้วยวิสัยทัศน์ที่จะเป็นผู้นำในการจำหน่ายคอมพิวเตอร์และอุปกรณ์ไอทีคุณภาพสูง
                         เราเชื่อว่าเทคโนโลยีควรเข้าถึงได้สำหรับทุกคน ด้วยราคาที่เป็นธรรมและบริการที่เป็นเลิศ
                     </p>
                     <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-                        ตลอด 10 ปีที่ผ่านมา เราได้ให้บริการลูกค้ามากกว่า 50,000 ราย และขยายสาขาทั่วประเทศไทย 
+                        ตลอด 10 ปีที่ผ่านมา เราได้ให้บริการลูกค้ามากกว่า 50,000 ราย และขยายสาขาทั่วประเทศไทย
                         เราภูมิใจที่ได้เป็นส่วนหนึ่งในการพัฒนาเทคโนโลยีของประเทศไทย
                     </p>
+                    <!-- ...existing code... -->
                     <div class="flex space-x-6">
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-blue-600">10+</div>
+                            <div class="text-3xl font-bold text-blue-600">
+                                <span class="counter rolling-number" data-target="10">0</span>
+                            </div>
                             <div class="text-gray-600">ปีของประสบการณ์</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-blue-600">50K+</div>
+                            <div class="text-3xl font-bold text-blue-600">
+                                <span class="counter rolling-number" data-target="50000">0</span>
+                            </div>
                             <div class="text-gray-600">ลูกค้าที่พึงพอใจ</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-blue-600">15</div>
+                            <div class="text-3xl font-bold text-blue-600">
+                                <span class="counter rolling-number" data-target="15">0</span>
+                            </div>
                             <div class="text-gray-600">สาขาทั่วประเทศ</div>
                         </div>
                     </div>
+                    <!-- ...existing code... -->
                 </div>
                 <div class="relative">
                     <div class="bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg p-8 text-white">
@@ -268,21 +294,31 @@
                 <div>
                     <h4 class="font-semibold text-lg mb-4">เมนู</h4>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">หน้าหลัก</a></li>
-                        <li><a href="product.html" class="text-gray-400 hover:text-white transition duration-300">สินค้า</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">บริการ</a></li>
-                        <li><a href="promotion.html" class="text-gray-400 hover:text-white transition duration-300">โปรโมชัน</a></li>
-                        <li><a href="article.html" class="text-gray-400 hover:text-white transition duration-300">บทความ</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">เกี่ยวกับเรา</a></li>
+                        <li><a href="index.html"
+                                class="text-gray-400 hover:text-white transition duration-300">หน้าหลัก</a></li>
+                        <li><a href="product.html"
+                                class="text-gray-400 hover:text-white transition duration-300">สินค้า</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition duration-300">บริการ</a></li>
+                        <li><a href="promotion.html"
+                                class="text-gray-400 hover:text-white transition duration-300">โปรโมชัน</a></li>
+                        <li><a href="article.html"
+                                class="text-gray-400 hover:text-white transition duration-300">บทความ</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-400 hover:text-white transition duration-300">เกี่ยวกับเรา</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold text-lg mb-4">หมวดสินค้า</h4>
                     <ul class="space-y-2">
                         <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">โน๊ตบุ๊ค</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">คอมพิวเตอร์ตั้งโต๊ะ</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">อุปกรณ์เสริม</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">ซอฟต์แวร์</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white transition duration-300">คอมพิวเตอร์ตั้งโต๊ะ</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">อุปกรณ์เสริม</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">ซอฟต์แวร์</a>
+                        </li>
                     </ul>
                 </div>
                 <div>
@@ -302,27 +338,50 @@
     </footer>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.counter').forEach(el => {
+                const target = +el.getAttribute('data-target');
+                let count = 0;
+                const duration = 3200;
+                const frameRate = 60;
+                const totalFrames = Math.round(duration / (1000 / frameRate));
+                let frame = 0;
+                const increment = target / totalFrames;
+                function animate() {
+                    frame++;
+                    count += increment;
+                    if (frame < totalFrames) {
+                        el.textContent = Math.floor(count).toLocaleString();
+                        requestAnimationFrame(animate);
+                    } else {
+                        el.textContent = target.toLocaleString();
+                    }
+                }
+                animate();
+            });
+        });
         // Mobile menu toggle
-        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
             document.querySelector('.mobile-menu').classList.toggle('hidden');
         });
 
-                // Mobile menu toggle
-        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
             document.querySelector('.mobile-menu').classList.toggle('hidden');
         });
 
         // User dropdown toggle
-        document.querySelector('.user-dropdown-btn').addEventListener('click', function() {
+        document.querySelector('.user-dropdown-btn').addEventListener('click', function () {
             document.querySelector('.user-dropdown').classList.toggle('hidden');
         });
 
         // Close dropdown when clicking outside
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
             if (!e.target.closest('.relative')) {
                 document.querySelector('.user-dropdown').classList.add('hidden');
             }
         });
     </script>
 </body>
+
 </html>
