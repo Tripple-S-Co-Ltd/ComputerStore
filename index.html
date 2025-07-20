@@ -23,9 +23,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <a href="index.html" class="flex items-center space-x-2">
-                        <i class="fas fa-laptop text-2xl"></i>
-                        <span class="font-bold text-xl">ComputerStore</span>
+                    <a href="index.html" class="flex items-center space-x-3 group">
+                        <span class="font-extrabold text-2xl text-white tracking-wide drop-shadow-lg transition duration-300 group-hover:text-yellow-300">
+                            Computer<span class="text-yellow-400">Store</span>
+                        </span>
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
@@ -41,9 +42,9 @@
                     <!-- User Dropdown -->
                     <div class="relative">
                         <button class="user-dropdown-btn flex items-center space-x-2 bg-blue-800 hover:bg-blue-700 px-4 py-2 rounded-lg transition duration-300">
-                            <i class="fas fa-user-circle text-xl"></i>
+                 
                             <span class="font-medium">Admin</span>
-                            <i class="fas fa-chevron-down text-sm"></i>
+                    
                         </button>
                         <div class="user-dropdown hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border z-50">
                             <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition duration-200">
@@ -81,19 +82,23 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+    <section class="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white py-32 overflow-hidden">
+        <img src="https://static.vecteezy.com/system/resources/previews/006/115/516/non_2x/abstract-futuristic-circuit-board-illustration-high-computer-technology-dark-blue-color-background-hi-tech-digital-technology-concept-free-vector.jpg"
+             alt=""
+             class="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none select-none" />
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+            
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
                 ยินดีต้อนรับสู่ <span class="text-yellow-400">ComputerStore</span>
             </h1>
-            <p class="text-xl md:text-2xl mb-8 text-blue-100">
+            <p class="text-xl md:text-2xl mb-8 text-blue-100 drop-shadow">
                 ร้านจำหน่ายคอมพิวเตอร์และอุปกรณ์ไอทีชั้นนำของไทย
             </p>
             <div class="space-x-4">
-                <a href="product.html" class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-lg font-semibold transition duration-300 inline-block">
+                <a href="product.html" class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-lg font-semibold transition duration-300 inline-block shadow">
                     ดูสินค้าทั้งหมด
                 </a>
-                <a href="contact.html" class="border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg font-semibold transition duration-300 inline-block">
+                <a href="contact.html" class="border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg font-semibold transition duration-300 inline-block shadow">
                     ติดต่อเรา
                 </a>
             </div>
@@ -110,21 +115,21 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="text-center p-6 rounded-lg bg-gray-50 hover:shadow-lg transition duration-300">
                     <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-shield-alt text-2xl text-blue-600"></i>
+                        <img src="https://cdn-icons-png.flaticon.com/512/4221/4221540.png" alt="รับประกันคุณภาพ" class="w-8 h-8" />
                     </div>
                     <h3 class="text-xl font-semibold mb-3">รับประกันคุณภาพ</h3>
                     <p class="text-gray-600">สินค้าทุกชิ้นมีการรับประกันคุณภาพ พร้อมบริการหลังการขาย</p>
                 </div>
                 <div class="text-center p-6 rounded-lg bg-gray-50 hover:shadow-lg transition duration-300">
                     <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-shipping-fast text-2xl text-green-600"></i>
+                        <img src="https://cdn-icons-png.flaticon.com/512/3566/3566778.png" alt="">
                     </div>
                     <h3 class="text-xl font-semibold mb-3">จัดส่งรวดเร็ว</h3>
                     <p class="text-gray-600">บริการจัดส่งถึงบ้านทั่วประเทศ รวดเร็วและปลอดภัย</p>
                 </div>
                 <div class="text-center p-6 rounded-lg bg-gray-50 hover:shadow-lg transition duration-300">
                     <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-headset text-2xl text-yellow-600"></i>
+                        <img src="https://cdn-icons-png.flaticon.com/512/3588/3588472.png" alt="">
                     </div>
                     <h3 class="text-xl font-semibold mb-3">ปรึกษาฟรี</h3>
                     <p class="text-gray-600">ทีมผู้เชี่ยวชาญพร้อมให้คำปรึกษาฟรีตลอด 24 ชั่วโมง</p>
@@ -134,66 +139,29 @@
     </section>
 
     <!-- Products Showcase -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">สินค้าแนะนำ</h2>
-                <p class="text-xl text-gray-600">เลือกสรรสินค้าคุณภาพดีที่สุดเพื่อคุณ</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                        <i class="fas fa-laptop text-6xl text-gray-500"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">โน๊ตบุ๊คเกมมิ่ง</h3>
-                        <p class="text-gray-600 mb-4">โน๊ตบุ๊คสำหรับเล่นเกมสมรรถนะสูง</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-2xl font-bold text-blue-600">฿35,990</span>
-                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300">
-                                ดูรายละเอียด
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                        <i class="fas fa-desktop text-6xl text-gray-500"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">คอมพิวเตอร์ตั้งโต๊ะ</h3>
-                        <p class="text-gray-600 mb-4">PC สำหรับงานออฟฟิศและเล่นเกม</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-2xl font-bold text-blue-600">฿28,500</span>
-                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300">
-                                ดูรายละเอียด
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                        <i class="fas fa-mouse text-6xl text-gray-500"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">อุปกรณ์เสริม</h3>
-                        <p class="text-gray-600 mb-4">เมาส์ คีย์บอร์ด และอุปกรณ์อื่นๆ</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-2xl font-bold text-blue-600">฿890</span>
-                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300">
-                                ดูรายละเอียด
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-12">
-                <a href="product.html" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition duration-300 inline-block">
-                    ดูสินค้าทั้งหมด
-                </a>
-            </div>
-        </div>
+    <section class="py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold mb-6">สินค้าแนะนำ</h2>
+        <div id="recommended-products" class="grid md:grid-cols-4 gap-6"></div>
+      </div>
     </section>
+    <script>
+    fetch('products.json')
+      .then(res => res.json())
+      .then(products => {
+        const recommend = products.slice(0, 4); // เลือก 4 ชิ้นแรก
+        document.getElementById('recommended-products').innerHTML = recommend.map(p => `
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+            <img src="${p.image}" alt="${p.name}" class="h-36 object-contain w-full bg-gray-100" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-2">${p.name}</h3>
+              <p class="text-gray-600 text-sm mb-3">${p.desc}</p>
+              <span class="text-xl font-bold text-blue-600">฿${p.price.toLocaleString()}</span>
+            </div>
+          </div>
+        `).join('');
+      });
+    </script>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">

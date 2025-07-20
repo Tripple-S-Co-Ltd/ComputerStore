@@ -1,0 +1,75 @@
+[
+  {
+    "name": "ASUS ROG Strix G15",
+    "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6466/6466550ld.jpg",
+    "price": 35990,
+    "oldPrice": 45990,
+    "desc": "โน๊ตบุ๊คเกมมิ่ง AMD Ryzen 7, RTX 3070",
+    "rating": 5,
+    "reviews": 128,
+    "category": "โน๊ตบุ๊ค"
+  },
+  {
+    "name": "Dell OptiPlex 7000",
+    "image": "https://tse3.mm.bing.net/th/id/OIP.W-y8uH99uZOOOOVZOndulgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "price": 28500,
+    "desc": "PC ตั้งโต๊ะ Intel i7, 16GB RAM",
+    "rating": 4,
+    "reviews": 89,
+    "category": "คอมพิวเตอร์ตั้งโต๊ะ"
+  },
+  {
+    "name": "Razer BlackWidow V3",
+    "image": "https://th.bing.com/th/id/R.e60cc1aed102caa5ca4a264616c5eaec?rik=WP67FiSLrs9Ggg&pid=ImgRaw&r=0",
+    "price": 4590,
+    "desc": "คีย์บอร์ดเกมมิ่ง Mechanical",
+    "rating": 5,
+    "reviews": 245,
+    "category": "อุปกรณ์เสริม"
+  },
+  {
+    "name": "Logitech G Pro X",
+    "image": "https://tse3.mm.bing.net/th/id/OIP.oAGofrheAU6hvTw8PCW6wgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "price": 3290,
+    "desc": "เมาส์เกมมิ่งไร้สาย",
+    "rating": 5,
+    "reviews": 156,
+    "category": "อุปกรณ์เสริม"
+  },
+  {
+    "name": "LG UltraWide 34\"",
+    "image": "https://th.bing.com/th/id/R.3408910c91637739910adb5cfc2315de?rik=oAtZhRiDZ7EEfw&pid=ImgRaw&r=0",
+    "price": 18900,
+    "desc": "จอมอนิเตอร์ 4K IPS",
+    "rating": 4,
+    "reviews": 78,
+    "category": "อุปกรณ์เสริม"
+  },
+  {
+    "name": "SteelSeries Arctis 7",
+    "image": "https://tse2.mm.bing.net/th/id/OIP.g2ZUDicjF3qMRlCBhC8W0QHaGp?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "price": 6590,
+    "desc": "หูฟังเกมมิ่งไร้สาย",
+    "rating": 5,
+    "reviews": 203,
+    "category": "อุปกรณ์เสริม"
+  },
+  {
+    "name": "MacBook Air M2",
+    "image": "https://thehikaku.net/pc/apple/image/22macbook-air-m2/x1400.jpg",
+    "price": 42900,
+    "desc": "โน๊ตบุ๊ค Apple 13\" 256GB",
+    "rating": 5,
+    "reviews": 92,
+    "category": "โน๊ตบุ๊ค"
+  },
+  {
+    "name": "AMD Ryzen 9 5900X",
+    "image": "https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-9-5900x.jpg",
+    "price": 16900,
+    "desc": "โปรเซสเซอร์ 12-Core",
+    "rating": 5,
+    "reviews": 167,
+    "category": "อุปกรณ์เสริม"
+  }
+]
