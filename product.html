@@ -169,42 +169,293 @@
     <!-- Products Grid -->
     <section class="py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-2xl font-bold mb-6">รายการสินค้า</h2>
-            <div id="all-products" class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6466/6466550ld.jpg" alt="ASUS ROG Strix G15" class="h-36 object-contain" />
+                            <!-- <i class="fas fa-laptop text-6xl text-gray-500"></i> -->
+                        </div>
+                        <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-md text-sm font-semibold">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">ASUS ROG Strix G15</h3>
+                        <p class="text-gray-600 text-sm mb-3">โน๊ตบุ๊คเกมมิ่ง AMD Ryzen 7, RTX 3070</p>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(128 รีวิว)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-400 line-through text-sm">฿45,990</span>
+                                <span class="text-xl font-bold text-red-600 block">฿35,990</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm add-to-cart-btn" 
+                                    data-name="ASUS ROG Strix G15" 
+                                    data-price="35990" 
+                                    data-icon="fas fa-laptop"
+                                    data-description="โน๊ตบุ๊คเกมมิ่ง AMD Ryzen 7, RTX 3070">
+                                <i class="fas fa-cart-plus mr-1"></i>เพิ่มลงตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.W-y8uH99uZOOOOVZOndulgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Dell OptiPlex 7000" class="h-36 object-contain" />
+                        <!-- <i class="fas fa-desktop text-6xl text-gray-500"></i> -->
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Dell OptiPlex 7000</h3>
+                        <p class="text-gray-600 text-sm mb-3">PC ตั้งโต๊ะ Intel i7, 16GB RAM</p>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(89 รีวิว)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-600">฿28,500</span>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm add-to-cart-btn"
+                                    data-name="Dell OptiPlex 7000" 
+                                    data-price="28500" 
+                                    data-icon="fas fa-desktop"
+                                    data-description="PC ตั้งโต๊ะ Intel i7, 16GB RAM">
+                                <i class="fas fa-cart-plus mr-1"></i>เพิ่มลงตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                            <img src="https://th.bing.com/th/id/R.e60cc1aed102caa5ca4a264616c5eaec?rik=WP67FiSLrs9Ggg&pid=ImgRaw&r=0" alt="Razer BlackWidow V3" class="h-36 object-contain" />
+                            <!-- <i class="fas fa-keyboard text-6xl text-gray-500"></i> -->
+                        </div>
+                        <div class="absolute top-2 right-2 bg-green-500 text-white px-2 py-1 rounded-md text-sm font-semibold">
+                            ใหม่!
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Razer BlackWidow V3</h3>
+                        <p class="text-gray-600 text-sm mb-3">คีย์บอร์ดเกมมิ่ง Mechanical</p>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(245 รีวิว)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-600">฿4,590</span>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm add-to-cart-btn"
+                                    data-name="Razer BlackWidow V3"
+                                    data-price="4590"
+                                    data-icon="fas fa-keyboard"
+                                    data-description="คีย์บอร์ดเกมมิ่ง Mechanical">
+                                <i class="fas fa-cart-plus mr-1"></i>เพิ่มลงตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.oAGofrheAU6hvTw8PCW6wgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Logitech G Pro X" class="h-36 object-contain" />
+                        <!-- <i class="fas fa-mouse text-6xl text-gray-500"></i> -->
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Logitech G Pro X</h3>
+                        <p class="text-gray-600 text-sm mb-3">เมาส์เกมมิ่งไร้สาย</p>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(156 รีวิว)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-600">฿3,290</span>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm add-to-cart-btn"
+                                    data-name="Logitech G Pro X"
+                                    data-price="3290"
+                                    data-icon="fas fa-mouse"
+                                    data-description="เมาส์เกมมิ่งไร้สาย">
+                                <i class="fas fa-cart-plus mr-1"></i>เพิ่มลงตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                        <img src="https://th.bing.com/th/id/R.3408910c91637739910adb5cfc2315de?rik=oAtZhRiDZ7EEfw&pid=ImgRaw&r=0" alt="LG UltraWide 34" class="h-36 object-contain" />
+                        <!-- <i class="fas fa-tv text-6xl text-gray-500"></i> -->
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">LG UltraWide 34"</h3>
+                        <p class="text-gray-600 text-sm mb-3">จอมอนิเตอร์ 4K IPS</p>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(78 รีวิว)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-600">฿18,900</span>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm add-to-cart-btn"
+                                    data-name="LG UltraWide 34\""
+                                    data-price="18900"
+                                    data-icon="fas fa-tv"
+                                    data-description="จอมอนิเตอร์ 4K IPS">
+                                <i class="fas fa-cart-plus mr-1"></i>เพิ่มลงตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.g2ZUDicjF3qMRlCBhC8W0QHaGp?rs=1&pid=ImgDetMain&o=7&rm=3" alt="SteelSeries Arctis 7" class="h-36 object-contain" />
+                        <!-- <i class="fas fa-headphones text-6xl text-gray-500"></i> -->
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">SteelSeries Arctis 7</h3>
+                        <p class="text-gray-600 text-sm mb-3">หูฟังเกมมิ่งไร้สาย</p>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(203 รีวิว)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-600">฿6,590</span>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm add-to-cart-btn"
+                                    data-name="SteelSeries Arctis 7"
+                                    data-price="6590"
+                                    data-icon="fas fa-headphones"
+                                    data-description="หูฟังเกมมิ่งไร้สาย">
+                                <i class="fas fa-cart-plus mr-1"></i>เพิ่มลงตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                        <img src="https://thehikaku.net/pc/apple/image/22macbook-air-m2/x1400.jpg" alt="MacBook Air M2" class="h-36 object-contain" />
+                        <!-- <i class="fas fa-laptop text-6xl text-gray-500"></i> -->
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">MacBook Air M2</h3>
+                        <p class="text-gray-600 text-sm mb-3">โน๊ตบุ๊ค Apple 13" 256GB</p>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(92 รีวิว)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-600">฿42,900</span>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm add-to-cart-btn"
+                                    data-name="MacBook Air M2"
+                                    data-price="42900"
+                                    data-icon="fas fa-laptop"
+                                    data-description="โน๊ตบุ๊ค Apple 13&quot; 256GB">
+                                <i class="fas fa-cart-plus mr-1"></i>เพิ่มลงตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                        <img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-9-5900x.jpg" alt="AMD Ryzen 9 5900X" class="h-36 object-contain" />
+                        <!-- <i class="fas fa-microchip text-6xl text-gray-500"></i> -->
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">AMD Ryzen 9 5900X</h3>
+                        <p class="text-gray-600 text-sm mb-3">โปรเซสเซอร์ 12-Core</p>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(167 รีวิว)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-600">฿16,900</span>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm add-to-cart-btn"
+                                    data-name="AMD Ryzen 9 5900X"
+                                    data-price="16900"
+                                    data-icon="fas fa-microchip"
+                                    data-description="โปรเซสเซอร์ 12-Core">
+                                <i class="fas fa-cart-plus mr-1"></i>เพิ่มลงตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center mt-12">
+                <nav class="flex space-x-2">
+                    <button class="px-3 py-2 text-gray-500 hover:text-blue-600 border border-gray-300 rounded-l-md hover:bg-gray-50">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded-md">1</button>
+                    <button class="px-4 py-2 text-gray-700 hover:text-blue-600 border border-gray-300 hover:bg-gray-50">2</button>
+                    <button class="px-4 py-2 text-gray-700 hover:text-blue-600 border border-gray-300 hover:bg-gray-50">3</button>
+                    <button class="px-3 py-2 text-gray-500 hover:text-blue-600 border border-gray-300 rounded-r-md hover:bg-gray-50">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </nav>
+            </div>
         </div>
     </section>
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-    fetch('products.json')
-      .then(res => res.json())
-      .then(products => {
-        document.getElementById('all-products').innerHTML = products.map((p, idx) => `
-          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-            <img src="${p.image}" alt="${p.name}" class="h-36 object-contain w-full bg-gray-100" />
-            <div class="p-4">
-              <h3 class="text-lg font-semibold mb-2">${p.name}</h3>
-              <p class="text-gray-600 text-sm mb-3">${p.desc}</p>
-              <span class="text-xl font-bold text-blue-600">฿${p.price.toLocaleString()}</span>
-              <div class="mt-4 flex gap-2">
-                <button class="bg-blue-100 hover:bg-blue-200 text-blue-700 px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 detail-btn" 
-                        data-idx="${idx}">
-                  ดูรายละเอียดสินค้า
-                </button>
-              </div>
-            </div>
-          </div>
-        `).join('');
-
-        // เพิ่ม event ให้ปุ่มดูรายละเอียด
-        document.querySelectorAll('.detail-btn').forEach(btn => {
-          btn.addEventListener('click', function() {
-            const product = products[this.dataset.idx];
-            showProductModal(product);
-          });
-        });
-      });
-});
-    </script>
 
     <!-- Product Modal -->
     <div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
@@ -245,24 +496,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Product Detail Modal -->
-    <div id="productDetailModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
-      <div class="bg-white rounded-lg shadow-xl max-w-md w-full mx-4 relative">
-        <button id="closeProductModal" class="absolute top-2 right-2 text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
-        <div class="p-6 text-center">
-          <img id="modalProductImg" src="" alt="" class="h-36 object-contain mx-auto mb-4" />
-          <h3 id="modalProductName" class="text-2xl font-bold mb-2"></h3>
-          <p id="modalProductDesc" class="text-gray-600 mb-3"></p>
-          <div class="flex justify-center items-center gap-2 mb-2">
-            <span id="modalProductPrice" class="text-xl font-bold text-blue-600"></span>
-            <span id="modalProductOldPrice" class="text-gray-400 line-through text-sm"></span>
-          </div>
-          <div class="flex justify-center items-center gap-1 mb-2" id="modalProductRating"></div>
-          <div class="text-gray-500 text-sm" id="modalProductReviews"></div>
-        </div>
-      </div>
     </div>
 
     <!-- Footer -->
@@ -505,10 +738,6 @@ document.addEventListener('DOMContentLoaded', function() {
             card.addEventListener('mouseleave', function() {
                 this.style.transform = 'translateY(0)';
             });
-        });
-
-        document.getElementById('productDetailModal').addEventListener('click', function(e) {
-          if (e.target === this) this.classList.add('hidden');
         });
     </script>
 </body>
